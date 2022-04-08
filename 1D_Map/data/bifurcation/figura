@@ -1,0 +1,8 @@
+
+gnuplot fig.gnu
+
+latex fig.tex
+latex fig.tex
+
+dvips -o fig.eps fig.dvi
+

@@ -1,0 +1,37 @@
+// Parâmetros definidos no main e passados como argumento para as funções
+
+#include <iostream>
+#include <fstream>
+#include <math.h>
+#include "functions.hpp"
+
+int main()
+{
+    // ------------------------------------------------------------------------
+        // Parameters od the map
+    double a =  0.43;
+    double b =  0.40;
+
+    // Initial conditions od Map 
+    double x0i =  0.8;
+    double y0i = -0.2;
+    //double x0f =  0.7;
+    //double y0f = -0.1;
+
+    // Parameters od the map plot
+    int numberIterations = 1e2;
+
+
+    double beginInitialConditions[2] = { x0i , y0i };
+    //double finalInitialConditions[2] = { x0f , y0f };
+
+
+    double parameters[2] = { a, b };
+
+    // Plot the map through a grid of initial conditions
+    //mapGrid(numberIterations, beginInitialConditions, finalInitialConditions, parameters);
+
+    mapOne(numberIterations, beginInitialConditions, parameters);
+
+    return 0;
+}
